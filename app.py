@@ -81,4 +81,4 @@ def delete(sauce_id):
   shutil.rmtree(f"static/{firstDec}/{sauce_id}")
   return Response(status=201)
 
-app.run(port=1224)
+app.run(port=5000)
