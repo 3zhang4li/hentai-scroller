@@ -18,7 +18,7 @@ THIRD_SECRET='gAAAAABkAw0-8PMf83pMAGNCC2tiQFTWFR6vqw_aKuhgRuCqQXU-SsZF10ggtCLrl7
 APP_SECRET_1='gAAAAABkAw4nx16UIPZ4rxoYZAI-ISaSZ8iGY-8H9eO9W3FsKJipeoPoAkS4_FYUP8QzhBUOSC4meGk3_wg_WGeRFJqVKwvauw=='
 ```
 
-NOTE: In the code previously, there were strings like "hentai" or "nhentai.net" when sending requests or accessing files so I decided to encrypt those strings first, then decrypt them when I need to use them. It's a bigger hassle, but at the cost of being extra discreet. 
+NOTE: In the code previously, there were strings like "hentai" or "nhentai.net" when sending requests or accessing files so I decided to encrypt those strings first, then decrypt them when I need to use them. It's a bigger hassle, but at the cost of being extra discreet so no one notices anything upfront if they happen to stumble across this code on your laptop.
 
 4. After creating your `.env` file, source them: `source .env`. 
 
