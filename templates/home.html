@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSCR!</title>
+</head>
+
+<body>
+  <button onclick="toggleDisplay()" style="width:200px;height:50;font-size:40px;"> toggle </button>
+  <div class="flex-container" style="display:flex;flex-wrap:wrap;">
+    {% for link in finalList %}
+    <div style="margin:20px;">
+      <a href="{{ link[0] }}" style="font-size:50px;"> {{ link[0] }}</a>
+      <a href="{{ link[0] }}"> <img href="{{ link[0] }}" class="cover" src="{{ url_for('static', filename=link[1]) }}" 
+        style="display:none;width:500px;"> </a>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+
+<script>
+  function toggleDisplay() {
+    topics = document.getElementsByClassName("cover");
+    console.log(topics)
+    for (var i = 0; i < topics.length; i++) {
+      var x = topics[i];
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  }
+</script>
+
+</html>
